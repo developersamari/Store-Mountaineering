@@ -1,5 +1,6 @@
 import type { Config } from "tailwindcss";
 
+<<<<<<< HEAD
 const config: Config = {
     darkMode: ["class"],
     content: [
@@ -113,3 +114,21 @@ const config: Config = {
 };
 export default config;
 
+=======
+export default {
+  content: [
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        background: "var(--background)",
+        foreground: "var(--foreground)",
+      },
+    },
+  },
+  plugins: [],
+} satisfies Config;
+>>>>>>> 658c68866eb10f25a26bd9d9b48ef1eae0b0e591
